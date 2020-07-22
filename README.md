@@ -26,6 +26,31 @@ Use local or start with [Docker](https://docs.docker.com/get-docker/) using comp
 docker-compose up
 ```
 
+Create queue listener
+
+```sh
+node queue.js test
+```
+
+Create queue listener in debugger mode
+
+```sh
+node queue.js test 1
+```
+
+Create cluster with 2 queues listeners
+
+```sh
+node cluster-queue.js test 2
+```
+
+
+Create cluster with 2 queues listeners in debugger mode
+
+```sh
+node cluster-queue.js test 2 1
+```
+
 ### Sample
 
 it's a good idea to look in the sample folder to understand how it works.
