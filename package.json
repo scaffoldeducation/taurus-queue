@@ -1,0 +1,41 @@
+{
+  "name": "taurus-queue",
+  "description": "Simple Node.js App to manage queues on redis based on Bull",
+  "version": "1.0.0",
+  "license": "GPL-3.0-only",
+  "contributors": [
+    {
+      "name": "Developer",
+      "email": "dev@kiwfy.com"
+    }
+  ],
+  "main": "queue.js",
+  "dependencies": {
+    "bull": "^3.15.0",
+    "dotenv": "^8.2.0",
+    "moment": "^2.27.0",
+    "ulid": "^2.3.0"
+  },
+  "keywords": [
+    "queue",
+    "node",
+    "bull",
+    "cluster",
+    "redis",
+    "taurus"
+  ],
+  "readmeFilename": "README.md",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint *.js ./app/*.js ./test/*/*.js ./business/*.js ./config/*.js ./example/*.js",
+    "test": "jest --silent --detectOpenHandles",
+    "check": "npm run lint && npm run test",
+    "test-debug": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.1.0"
+  }
+}
